@@ -10,8 +10,7 @@ public class App {
         System.out.println("Starting...\n");
         Connection connection = null;
         String dbName = "jdbc:sqlite:/home/geo/dbdemo/datastudent.db";
-        try
-        {
+        try {
             connection = DriverManager.getConnection(dbName);
             Statement statement = connection.createStatement();
             statement.setQueryTimeout(30);
